@@ -3,9 +3,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 import { GatewayModule } from './gateway/gateway.module';
+import { ChatsModule } from './chats/chats.module';
 
 @Module({
-  imports: [GatewayModule],
+  imports: [GatewayModule, ChatsModule],
   controllers: [AppController],
   providers: [AppService],
 })
